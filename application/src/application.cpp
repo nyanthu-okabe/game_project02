@@ -24,8 +24,8 @@ void Application::run()
         m_engine->beginFrame();
 
         // From design doc
-        m_engine->getRenderer().drawMesh("cube.obj");
-        m_engine->getAudio().playSound("bgm.wav");
+        m_engine->getRenderer().drawMesh("/Users/riookabe/Desktop/nyanthu/nyanthu - game/project_back/application/materials/con.obj");
+        m_engine->getAudio().playSound("/Users/riookabe/Desktop/nyanthu/nyanthu - game/project_back/application/materials/bgm.wav");
 
         m_engine->endFrame();
     }

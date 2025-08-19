@@ -7,8 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_OBJCXX_STANDARD 17)
 set(CMAKE_OBJCXX_STANDARD_REQUIRED ON)
 
-add_subdirectory(../nyanchu_engine nyanchu_engine_build)
-
 add_executable(game
     src/main.cpp
     src/application.cpp
