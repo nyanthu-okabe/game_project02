@@ -1,0 +1,8 @@
+build/
+*.o
+*.exe
+*.log
+.DS_Store
+*.html
+設計書.md
+external/
