@@ -57,6 +57,11 @@ if (APPLE)
         "-framework QuartzCore"
         "-framework MetalKit"
     )
+elseif(UNIX AND NOT APPLE)
+    target_sources(nyanthu_engine PRIVATE
+        engine/src/platform/platform_utils_linux.cpp
+        engine/src/renderer_opengl.cpp
+    )
 else()
     target_sources(nyanthu_engine PRIVATE
         engine/src/renderer_opengl.cpp
@@ -148,4 +153,3 @@ endforeach()
 #     COMMAND $<TARGET_FILE:hello_world>
 #     DEPENDS hello_world
 # )
-
